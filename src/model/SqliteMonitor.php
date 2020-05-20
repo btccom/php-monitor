@@ -6,6 +6,7 @@ use pm\model\common\TraitModel;
 
 class SqliteMonitor extends \Illuminate\Database\Eloquent\Model implements iModelInterface {
     use TraitModel;
+    public $timestamps = false;
     protected $table = "php_monitor";
     protected $primaryKey = 'rowid';
     const CREATED_AT = null;
