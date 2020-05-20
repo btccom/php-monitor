@@ -49,7 +49,7 @@ class Format{
             'profile' => json_encode(["profile"=>$this->_profile,"sql"=>$this->_sql]),
             'mu' => $this->_profile['main()']['mu'],
             'pmu' => $this->_profile['main()']['pmu'],
-            'ct' => $this->_profile['main()']['ct'],
+            'ct' => $this->_profile['main()']['ct'] ?? '',
             'cpu' => $this->_profile['main()']['cpu'],
             'wt' => $this->_profile['main()']['wt'],
         ];
